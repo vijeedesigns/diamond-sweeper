@@ -1,4 +1,4 @@
-# diamond-sweeper
+# DiamondSweeper
 
 Simple puzzle game created on Angular 5.2.0
 
