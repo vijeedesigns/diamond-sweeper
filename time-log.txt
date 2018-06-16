@@ -23,3 +23,6 @@ previous logs
 
 20180616 14:45
 app moved to git
+
+20180616 15:30
+added testing (Redmi 3s) file on git
