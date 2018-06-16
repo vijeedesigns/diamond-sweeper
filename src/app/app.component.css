@@ -124,7 +124,8 @@
 }
 
 
-.game-complete-box {
+.game-complete-box,
+.game-over-box {
     width: 100%;
 	height: 100%;
     position: absolute;
@@ -135,19 +136,30 @@
     text-align: center;
     background-color: rgba(255,255,255,0.7);
     border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.game-complete-box h1 {
+.game-complete-box h1,
+.game-over-box h1 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	font-size: 40px;
+	margin: 15px 0;
+}
+.game-complete-box h1 {
 	color: #4CAF50;
-	margin-top: 30%;
+}
+.game-over-box h1 {
+	color: #ef5350;
 }
 .game-complete-box h4 {
 	font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 20px;
     color: #607D8B;
+    margin: 15px 0;
 }
 .game-complete-box .success-points {
 	font-size: 40px;
@@ -170,26 +182,6 @@
 .game-complete-box .btn-start-again:hover,
 .game-over-box .btn-start-again:hover {	
 	box-shadow: 0 10px 30px -10px #42A5F5;
-}
-
-.game-over-box {
-    width: 100%;
-	height: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 0;
-    text-align: center;
-    background-color: rgba(255,255,255,0.7);
-    border-radius: 3px;
-}
-.game-over-box h1 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
-	font-size: 40px;
-	color: #ef5350;
-	margin-top: 38%;
 }
 
 .main-wrap footer {
