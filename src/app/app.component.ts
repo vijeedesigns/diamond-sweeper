@@ -75,7 +75,7 @@ export class AppComponent implements OnInit {
 		save_log : ()=> {
 			this.game.saved_logs.push({
 				time : new Date(),
-				points : this.game.points
+				points : this.game.points+this.game.success_count
 			});
 			localStorage.setItem('diamons_sweeper',JSON.stringify(this.game.saved_logs));
 		},

@@ -12,7 +12,7 @@
             </div>
             <div class="game-complete-box" *ngIf="game.success_count==8">
                 <h1>Success !</h1>
-                <h4>Your Points: <span class="success-points">{{game.points}}</span></h4>
+                <h4>Your Points: <span class="success-points">{{game.points+game.success_count}}</span></h4>
                 <button type="button" class="btn-start-again" (click)="game.start_again()">Start Again</button>
             </div>
             <div class="game-over-box" *ngIf="game.game_over">
