@@ -93,16 +93,7 @@ export class AppComponent implements OnInit {
 			this.game.game_over = false;
 
 			setTimeout(()=> {
-				this.game.create_diamonds();
-				for(let i=0;i<64;i++) {
-					let box = {
-						id : i,
-						is_diamond : this.game.diamonds.indexOf(i)>-1,
-						success : false,
-						clicked : false
-					}
-					this.game.boxes.push(box);
-				}
+				this.game.init();
 			})
 		},
 		init : ()=> {
