@@ -1,2 +1,18 @@
 20180616 08:45
 Git repository created
+
+20180616 08:50
+angular project started
+
+20180616 09:15
+break
+
+20180616 10:30
+images integration
+box styling
+functions started
+
+20180616 11:30
+break
+
+20180616 12:00

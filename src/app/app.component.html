@@ -1,0 +1,33 @@
+<div class="main-wrap">
+    <header>Diamond Sweeper</header>
+    <section class="content-wrap">
+        <div class="diamond-box-wrap">
+            <div class="diamond-box-container" [ngClass]="{'complete':game.success_count==8}">
+                <div class="diamond-box" *ngFor="let box of game.boxes;" (click)="game.click_diamond_box(box);" [ngClass]="{'clicked':box.clicked,'success':box.success}">
+                    <div class="index">{{box.id}}</div>
+                    <div class="bomb"><img src="assets/bomb.png" /></div>
+                    <div class="diamond" *ngIf="box.is_diamond"><img src="assets/diamond.png" /></div>
+                    <div class="diamond-arrow-left" *ngIf="box.id==game.one_diamond"><img src="assets/arrow-right.png" /></div>
+                </div>
+            </div>
+            <div class="game-complete-box" *ngIf="game.success_count==8">
+                <h1>Success !</h1>
+                <h4>Your Points: <span class="success-points">{{game.points}}</span></h4>
+                <button type="button" class="btn-start-again" (click)="game.start_again()">Start Again</button>
+            </div>
+            <div class="game-over-box" *ngIf="game.game_over">
+                <h1>Game over !</h1>
+                <button type="button" class="btn-start-again" (click)="game.start_again()">Start Again</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <code>Clicks:{{game.click_count}}, Success:{{game.success_count}}</code>
+    </footer>
+    <div class="prevoius-log">
+        <div class="log" *ngFor="let log of game.saved_logs">
+            <div class="datetime">{{log.time | date:'short'}}</div>
+            <div class="points">{{log.points}}</div>
+        </div>
+    </div>
+</div>
