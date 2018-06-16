@@ -15,4 +15,11 @@ functions started
 20180616 11:30
 break
 
-20180616 12:00
+20180616 13:00
+success block
+error block
+style changes
+previous logs
+
+20180616 14:45
+app moved to git
