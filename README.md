@@ -25,7 +25,7 @@ There are 8 hidden diamonds placed on the board. Click each boxes to find the di
 You can also run the project without using npm or Angular.
 1. Download files in dist folder.
 2. Run index.html on your browser.
-3. If you are facing any trouble, please check <base href="/">. Here you have to give valuable href value.
+3. If you are facing any trouble, please check &lt;base href="/"&gt;. Here you have to give valuable href value.
 
 ![Screenshot](./screenshot.png)
 
